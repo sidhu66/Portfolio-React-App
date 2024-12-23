@@ -1,0 +1,73 @@
+#myPortfolio{
+    min-height: calc(100vh - 5rem);
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100vw;
+    max-width: 100rem; 
+    min-height: 100vh; 
+    /* width: 100vw;*/
+    /* max-width: 90rem;  */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.worksTitle {
+    margin: 1rem 0;
+    font-size: 3rem;
+
+}
+.worksDesc {
+    width: 250rem; 
+    font-weight: 400;
+    font-size: 1.2rem;
+    max-width: 100rem;
+    text-align: left;
+    padding-bottom: 2rem;
+    padding-top: 0.5rem;
+}
+
+.worksImgs{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100vw; 
+    max-width: 250rem; 
+
+}
+
+.worksImg {
+    object-fit: cover;
+    height: 20rem;
+    margin: 0.5rem;
+}
+
+.worksBtn {
+    margin: 3rem 0;
+    background: white;
+    padding: 0.5rem 2.5rem;
+    border: none;
+    border-radius: 2rem;
+    /* font-size: 1rem; */
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.worksBtn:hover {
+    background: #3498db;
+    color: white;
+  }
+
+@media  screen and (max-width:585px) {
+    .worksImg{
+        height: 48vw;
+
+    }
+}
+
