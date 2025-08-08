@@ -1,10 +1,11 @@
 import Navbar from "./components/navbar/navbar";
 import Intro from "./components/Intro/intro";
 import Skills from './components/Skills/skills';
-import MyPortfolio from './components/MyPortfolio/myPortfolio'
-import Client from "./components/Client/client";
-import ContactPage from "./components/ContactPage/contactPage"
-import Footer from './components/Footer/footer'
+import MyPortfolio from './components/MyPortfolio/myPortfolio';
+import Experience from "./components/Experience/experience";
+import ContactPage from "./components/ContactPage/contactPage";
+import Footer from './components/Footer/footer';
+
 function App() {
   return (
     <div className="App">
@@ -12,10 +13,9 @@ function App() {
       <Intro/>
       <Skills/>
       <MyPortfolio/>
-      <Client/>
+      <Experience/>
       <ContactPage/>
       <Footer/>
-
     </div>
   );
 }

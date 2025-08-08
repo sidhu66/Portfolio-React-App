@@ -3,6 +3,8 @@ import './navbar.css'
 import logo from '../../assests/CVLogo.jpg'
 import {Link} from 'react-scroll'
 import MenuBtn from '../../assests/MenuBtn.png'
+import Resume from '../../Karanveer_Sidhu_Resume.pdf';
+
 const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false);
     return (
@@ -12,12 +14,13 @@ const Navbar = () => {
                 <Link activeClass="active" to='intro' spy={true} smooth={true} offset={-50} duration={500} className="desktopMenuListItem" >Home</Link>
                 <Link activeClass="active" to='skills' spy={true} smooth={true} offset={-50} duration={500} className="desktopMenuListItem" >About</Link>
                 <Link activeClass="active" to='myPortfolio' spy={true} smooth={true} offset={-50} duration={500} className="desktopMenuListItem" >Portfolio</Link>
-                <Link activeClass="active" to='client' spy={true} smooth={true} offset={-50} duration={500} className="desktopMenuListItem" >Clients</Link>
-                
+                <Link activeClass="active" to='experience' spy={true} smooth={true} offset={-50} duration={500} className="desktopMenuListItem" >Experience</Link>
             </div>
-            <button className="destopMenuBtn" onClick={()=>{
-                document.getElementById('contactPage').scrollIntoView({behavior: 'smooth'});}}>
-                Contact Me</button>
+            <div>
+                <a href={Resume} download="Karanveer_Sidhu_Resume.pdf" className="destopMenuBtn resumeBtn">Resume</a>
+                <button className="destopMenuBtn" onClick={()=>{document.getElementById('contactPage').scrollIntoView({behavior: 'smooth'});}}>
+                    Contact Me</button>
+            </div>
             
                 
                 <img src={MenuBtn} alt="Menu" className="mobMenu" onClick={()=>setShowMenu(!showMenu)}/>
@@ -25,8 +28,9 @@ const Navbar = () => {
                 <Link activeClass="active" to='intro' spy={true} smooth={true} offset={-50} duration={500} className="ListItem" onClick={()=> setShowMenu(false)}>Home</Link>
                 <Link activeClass="active" to='skills' spy={true} smooth={true} offset={-50} duration={500} className="ListItem" onClick={()=> setShowMenu(false)}>About</Link>
                 <Link activeClass="active" to='myPortfolio' spy={true} smooth={true} offset={-50} duration={500} className="ListItem" onClick={()=> setShowMenu(false)}>Portfolio</Link>
-                <Link activeClass="active" to='client' spy={true} smooth={true} offset={-50} duration={500} className="ListItem" onClick={()=> setShowMenu(false)}>Clients</Link>
+                <Link activeClass="active" to='experience' spy={true} smooth={true} offset={-50} duration={500} className="ListItem" onClick={()=> setShowMenu(false)}>Experience</Link>
                 <Link activeClass="active" to='contactPage' spy={true} smooth={true} offset={-50} duration={500} className="ListItem" onClick={()=> setShowMenu(false)}>Contact</Link>
+                <a href={Resume} download="Karanveer_Sidhu_Resume.pdf" className="ListItem">Resume</a>
             </div>
         </nav>
     )

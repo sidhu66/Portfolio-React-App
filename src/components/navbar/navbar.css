@@ -41,6 +41,10 @@
 
 }
 
+.resumeBtn {
+    margin-right: 1rem;
+}
+
 .btn:hover {
     background: #3498db;
     color: white;
