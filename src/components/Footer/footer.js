@@ -24,7 +24,7 @@ const Footer = () => {
 
                     <nav className="flex items-center gap-4 leading-none">
                         {/* Email */}
-                        <IconButton href="mailto:karanveersinghsidhu@uwindsor.ca" label="Email">
+                        <IconButton href="mailto:sidhu66@uwindsor.ca" label="Email">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5A2.25 2.25 0 0 1 19.5 19.5H4.5A2.25 2.25 0 0 1 2.25 17.25V6.75m19.5 0L12 13.5 2.25 6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5H4.5A2.25 2.25 0 0 0 2.25 6.75" />
                             </svg>
